@@ -1,0 +1,578 @@
+﻿<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Gener-X</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+        <meta content="Coderthemes" name="author">
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- third party css -->
+        <!-- <link href="assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css"> -->
+        <!-- third party css end -->
+
+        <!-- App css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css" id="light-style">
+        <script src="https://unpkg.com/wavesurfer.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.spectrogram.min.js" type="text/javascript"></script>
+        <!-- <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style"> -->
+
+    </head>
+
+    <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+        <!-- Begin page -->
+        <div class="wrapper">
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="leftside-menu">
+    
+                <!-- LOGO -->
+                <a href="index.html" class="logo text-center logo-light">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo.png" alt="" height="16">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="assets/images/logo_sm.png" alt="" height="16">
+                    </span>
+                </a>
+
+                <!-- LOGO -->
+                <a href="index.html" class="logo text-center logo-dark">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-dark.png" alt="" height="16">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="assets/images/logo_sm_dark.png" alt="" height="16">
+                    </span>
+                </a>
+    
+                <div class="h-100" id="leftside-menu-container" data-simplebar="">
+
+                    <!--- Sidemenu -->
+                    <ul class="side-nav">
+
+                        <li class="side-nav-title side-nav-item">Navigation</li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarDashboards" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                                <i class="uil-home-alt"></i>
+                                <span class="badge bg-success float-end">4</span>
+                                <span> Dashboards </span>
+                            </a>
+                            <div class="collapse" id="sidebarDashboards">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="index.html">Analytics</a>
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Help Box -->
+                    <div class="help-box text-white text-center">
+                        <a href="javascript: void(0);" class="float-end close-btn text-white">
+                            <i class="mdi mdi-close"></i>
+                        </a>
+                        <img src="assets/images/help-icon.svg" height="90" alt="Helper Icon Image">
+                        <h5 class="mt-3">Testing Access</h5>
+                        <p class="mb-3">Version 1 </p>
+                        <a href="javascript: void(0);" class="btn btn-outline-light btn-sm">Githbub</a>
+                    </div>
+                    <!-- end Help Box -->
+                    <!-- End Sidebar -->
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+                    <!-- Topbar Start -->
+                    <div class="navbar-custom">
+                        <ul class="list-unstyled topbar-menu float-end mb-0">
+                            <li class="dropdown notification-list d-lg-none">
+                                <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <i class="dripicons-search noti-icon"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-animated dropdown-lg p-0">
+                                    <form class="p-3">
+                                        <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                    </form>
+                                </div>
+                            </li>
+                            
+
+                            <li class="dropdown notification-list d-none d-sm-inline-block">
+                                <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <i class="dripicons-view-apps noti-icon"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated dropdown-lg p-0">
+
+                                    <div class="p-2">
+                                        <div class="row g-0">
+                                            <div class="col">
+                                                <a class="dropdown-icon-item" href="#">
+                                                    <img src="assets/images/brands/slack.png" alt="slack">
+                                                    <span>Slack</span>
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <a class="dropdown-icon-item" href="#">
+                                                    <img src="assets/images/brands/github.png" alt="Github">
+                                                    <span>GitHub</span>
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <a class="dropdown-icon-item" href="#">
+                                                    <img src="assets/images/brands/dribbble.png" alt="dribbble">
+                                                    <span>Dribbble</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="row g-0">
+                                            <div class="col">
+                                                <a class="dropdown-icon-item" href="#">
+                                                    <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
+                                                    <span>Bitbucket</span>
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <a class="dropdown-icon-item" href="#">
+                                                    <img src="assets/images/brands/dropbox.png" alt="dropbox">
+                                                    <span>Dropbox</span>
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <a class="dropdown-icon-item" href="#">
+                                                    <img src="assets/images/brands/g-suite.png" alt="G Suite">
+                                                    <span>G Suite</span>
+                                                </a>
+                                            </div>
+                                        </div> <!-- end row-->
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            
+
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <span class="account-user-avatar"> 
+                                        <img src="assets/images/brands/github.png" alt="user-image" class="rounded-circle">
+                                    </span>
+                                    <span>
+                                        <span class="account-user-name">SortechZ</span>
+                                        <span class="account-position">Founder</span>
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <button class="button-menu-mobile open-left">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                        <div class="app-search dropdown d-none d-lg-block">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control dropdown-toggle" placeholder="Search..." id="top-search">
+                                    <span class="mdi mdi-magnify search-icon"></span>
+                                    <button class="input-group-text" type="submit">Search</button>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end Topbar -->
+                    
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <form class="d-flex">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control form-control-light" id="dash-daterange">
+                                                <span class="input-group-text bg-primary border-primary text-white">
+                                                    <i class="mdi mdi-calendar-range font-13"></i>
+                                                </span>
+                                            </div>
+                                            <a href="javascript: void(0);" class="btn btn-primary ms-2">
+                                                <i class="mdi mdi-autorenew"></i>
+                                            </a>
+                                        </form>
+                                    </div>
+                                    <h4 class="page-title">Analytics</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+
+                        <div class="row">
+                            <div class="col-12 pb-3">
+                                <div class="form-group">
+                                    <label for="formFile" class="form-label">Default file input example</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                  </div>
+                        
+                            </div>
+                            <div class="col-xl-3 col-lg-4">
+                                <div class="card tilebox-one h-100">
+                                    <div id="result" class="card-body text-center d-flex justify-content-center align-items-center">
+                                        <!-- <i class='uil uil-users-alt float-end'></i>
+                                        <h6 class="text-uppercase mt-0">Active Users</h6>
+                                        <h2 class="my-2" id="active-users-count">121</h2>
+                                        <p class="mb-0 text-muted">
+                                            <span class="text-success me-2"><span class="mdi mdi-arrow-up-bold"></span> 5.27%</span>
+                                            <span class="text-nowrap">Since last month</span>  
+                                        </p> -->
+                                        <h1>OUTPUT</h1>
+                                        <!-- <h1>POP</h1> -->
+                                    </div> <!-- end card-body-->
+                                </div>
+                                <!--end card-->
+
+                            </div> <!-- end col -->
+
+                            <div class="col-xl-9 col-lg-8">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <!-- <div class="alert alert-warning alert-dismissible fade show mb-3" role="alert">
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                            Property HY1xx is not receiving hits. Either your site is not receiving any sessions or it is not tagged correctly.
+                                        </div> -->
+                                        <ul class="nav float-end d-none d-lg-flex">
+                                            <li class="nav-item">
+                                                <a class="nav-link text-muted" href="#">Today</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-muted" href="#">7d</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#">15d</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-muted" href="#">1m</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-muted" href="#">1y</a>
+                                            </li>
+                                        </ul>
+                                        <h4 class="header-title mb-3">Input Audio</h4>
+
+                                        <div dir="ltr">
+                                            <div id="waveform" class="apex-charts mt-3" data-colors="#0acf97"></div>
+                                            <div class="controls pt-3">
+                                                <button class="btn btn-primary" onclick="wavesurfer.playPause()">
+                                                    <i class="glyphicon glyphicon-play"></i>
+                                                    Play
+                                                    /
+                                                    <i class="glyphicon glyphicon-pause"></i>
+                                                    Pause
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div>
+                        </div>
+
+                        
+                        <div class="row align-items-center">
+                            <div class="col-12 mt-2">
+                        
+                                        <h4 class="header-title">Audio Spectogram</h4>
+                                        <div class="row justify-content-center">
+                                            <div class="col-8">
+                                                <div id="wave-spectrogram" class="mt-3 mb-3">
+                                            </div>
+                                            
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="dropdown float-end">
+                                            <a href="#" class="dropdown-toggle arrow-none card-drop p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="mdi mdi-dots-vertical"></i>
+                                            </a>
+                                            
+                                        </div>
+                                        <h4 class="header-title mt-1 mb-3">ML API Endpoints</h4>
+
+                                        <!-- <div id="views-min" class="apex-charts mt-2" data-colors="#0acf97"></div> -->
+
+                                        <div class="table-responsive mt-3">
+                                            <table class="table table-sm mb-0 font-13">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Page</th>
+                                                
+                                                        <th>Method</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="https://radiant-river-01801.herokuapp.com/" target=”_blank” class="text-primary">https://radiant-river-01801.herokuapp.com/</a>
+                                                        </td>
+                                                        
+                                                        <td>GET</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="https://radiant-river-01801.herokuapp.com/" class="text-primary">https://radiant-river-01801.herokuapp.com/file-upload</a>
+                                                        </td>
+                                                        
+                                                        <td>POST</td>
+                                                    </tr>
+                                                   
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+
+                           
+
+                            <div class="col-lg-6 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <a href="" class="p-0 float-end">Export <i class="mdi mdi-download ms-1"></i></a>
+                                        <h4 class="header-title mt-1 mb-3">Training Data</h4>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-sm table-centered mb-0 font-14">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th>Genre</th>
+                                                        <th>Total</th>
+                                                        <!-- <th style="width: 40%;"></th> -->
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Blues</td>
+                                                        <td>600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Classical</td>
+                                                        <td>600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Country</td>
+                                                        <td>600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Disco</td>
+                                                        <td>600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hiphop</td>
+                                                        <td>600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jazz</td>
+                                                        <td>600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Metal</td>
+                                                        <td>600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pop</td>
+                                                        <td>600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rock</td>
+                                                        <td>600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Reggae</td>
+                                                        <td>600</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- end table-responsive-->
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                              
+                            </div> <!-- end col-->
+                        </div>
+                        <!-- end row -->
+                        
+                    </div>
+                    <!-- container -->
+
+                </div>
+                <!-- content -->
+
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <script>document.write(new Date().getFullYear())</script> © SortechZ
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-end footer-links d-none d-md-block">
+                                    <a href="javascript: void(0);">About</a>
+                                    <a href="javascript: void(0);">Support</a>
+                                    <a href="javascript: void(0);">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+
+        </div>
+        <!-- END wrapper -->
+
+            </div>
+        </div>
+
+        <div class="rightbar-overlay"></div>
+        <!-- /End-bar -->
+
+        <!-- bundle -->
+
+
+        <script src="assets/js/vendor.min.js"></script>
+        <script src="assets/js/app.min.js"></script>
+
+
+        <script>
+            const input = document.getElementById('formFile');
+            const final = document.getElementById('result')
+            const heroku = "https://radiant-river-01801.herokuapp.com/file-upload"
+            const local = "http://127.0.0.1:5000/file-upload"
+
+            
+
+// This will upload the file after having read it
+const upload = (file) => {
+      console.log(URL.createObjectURL(file))
+      final.innerHTML = `<div class="spinner-border" role="status"></div>`
+   
+   var formdata = new FormData();
+   formdata.append("file", file);
+
+   var requestOptions = {
+  method: 'POST',
+  body: formdata,
+};
+
+  fetch(local, requestOptions)
+  .then(response => response.json())
+  .then(result =>  final.innerHTML = `<h1 class="text-capitalize" > ${result["label"]} </h1>`)
+  .catch(error => final.innerHTML = `<p class=" text-danger" > Error : Only wav/mp3 Files Accepted </p>`);
+};
+
+// Event handler executed when a file is selected
+const onSelectFile = () => upload(input.files[0]);
+
+// Add a listener on your input
+// It will be triggered when a file will be selected
+input.addEventListener('change', onSelectFile, false);
+
+        </script>
+
+
+        <script>
+            var wavesurfer
+            let colorMapFinal
+    
+            document.addEventListener('DOMContentLoaded', function () {
+                    // Load a colormap json file to be passed to the spectrogram.create method.
+                    
+                });
+    
+    
+            document.addEventListener('DOMContentLoaded', function () {
+                WaveSurfer.util
+                        .fetchFile({ url: 'hot-colormap.json', responseType: 'json' })
+                        .on('success', colorMap => {
+                            console.log("wow")
+                        
+                        
+    
+                let option = options = {
+                    container: '#waveform',
+                    waveColor: 'violet',
+                    progressColor: 'purple',
+                    loaderColor: 'purple',
+                    cursorColor: 'navy',
+                    plugins: [
+                        WaveSurfer.spectrogram.create({
+                            container: '#wave-spectrogram',
+                            labels: true,
+                            colorMap: colorMap,
+                            fftSamples: 1024,
+                            height: 256
+                        })
+                    ]
+                };
+    
+                
+                wavesurfer = WaveSurfer.create(option);
+    
+                wavesurfer.load('https://wavesurfer-js.org/example/media/demo.wav');
+
+                document.getElementById("formFile").addEventListener('change', function(e){
+        var file = this.files[0];
+
+        if (file) {
+            var reader = new FileReader();
+            
+            reader.onload = function (evt) {
+                // Create a Blob providing as first argument a typed array with the file buffer
+                var blob = new window.Blob([new Uint8Array(evt.target.result)]);
+
+                // Load the blob into Wavesurfer
+                wavesurfer.loadBlob(blob);
+            };
+
+            reader.onerror = function (evt) {
+                console.error("An error ocurred reading the file: ", evt);
+            };
+
+            // Read File as an ArrayBuffer
+            reader.readAsArrayBuffer(file);
+        }
+    }, false);
+    
+            });
+    
+               
+            });
+        </script>
+    </body>
+
+</html>

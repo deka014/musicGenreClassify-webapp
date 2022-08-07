@@ -1,0 +1,22 @@
+#wave-spectrogram{
+    margin: 10px auto;
+    position: relative;
+  }
+  /* #wave-spectrogram canvas{
+    left: 0;
+  } */
+  
+  .spec-labels{
+      position: absolute!important;
+  }
+
+  .tilebox-one{
+    background-image: url("https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #result{
+    color: white;
+  }
