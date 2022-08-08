@@ -3,6 +3,12 @@
 Genre classification, or categorizing music into different categories or genres, is a concept that helps distinguish between the two genres based on the rhythm they compose or maintain.
 
 
+## Contributors
+
+- [Deepjyoti Deka](https://github.com/deka014)
+- [Nitin Choudhury](https://github.com/nitin293)
+
+
 ## Abstract 
 
 This project is primarily aimed to create an automated system for classification model for music genres. The first step includes collecting a properly classified music dataset and preprocess the music for further processes. The dataset used here is GTZAN genre dataset. The second step includes the preprocessing of the data. Here in this step, the data size or the number of samples in each genre is increased in order to make the dataset suitable for feeding a Convolutional Neural Network (CNN). In the third step, the Mel-frequency cepstral coefficients (MFCCs) are calculated for each sample and classification label is added to each sample. Now the final dataset is prepared. In the fourth step, a Convolutional Neural Network is created and then the dataset is feed to the neural network model with 80% training size, 10% testing size and 10% validation size of the dataset. During training the model, a 93% of testing accuracy as well as 81% testing accuracy is obtained. The obtained model is exported and it is ready to be deployed. Lastly, a REST API is created for deployment using Python-Flask and is deployed on Heroku server.
