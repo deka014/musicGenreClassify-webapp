@@ -3,11 +3,6 @@
 Genre classification, or categorizing music into different categories or genres, is a concept that helps distinguish between the two genres based on the rhythm they compose or maintain.
 
 
-## Contributors
-
-- [Deepjyoti Deka](https://github.com/deka014)
-- [Nitin Choudhury](https://github.com/nitin293)
-
 
 ## Abstract 
 
@@ -60,6 +55,11 @@ The API returns JSON output with the label key as the predicted Genre -->
 The Music Genre Detection can be a great tool for video and audio streaming services.With the huge increase in online music databases and daily uploads, people find it increasingly difficult and tedious to manually categorize their songs to its genre. Also as music is inherently ambiguous, it may lead to confusion if the artist categorizes its music to a wrong genre. Being able to automatically classify and provide tags to the music will help better recommendations to their users and increase their engagement to the service.
 
 The extension of this work would be to consider bigger data sets and also tracks in different formats(mp4, au etc.). Also, with time the style represented by each genre will continue to change. So the objective for the future will be to stay updated with the change in styles of genres and extending our software to work on these updated styles. This work can also be extended to work as a music recommendation system depending on the mood of the person.
+
+## Contributors
+
+- [Deepjyoti Deka](https://github.com/deka014)
+- [Nitin Choudhury](https://github.com/nitin293)
 
 ##  References
 
