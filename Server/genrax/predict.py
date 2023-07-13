@@ -4,6 +4,7 @@ from pydub import AudioSegment
 import re
 import argparse
 import tensorflow.keras as keras
+import os
 
 
 def to_wav(src, dst):
@@ -69,7 +70,8 @@ def predict(FILE_PATH, MODEL_PATH, SHAPE):
 
     prediction = model.predict(X)
     predicted_index = np.argmax(prediction, axis=1)
-
+    
+    os.remove(FILE_PATH)
     return labels[predicted_index[0]]
 
 
