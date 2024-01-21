@@ -1,5 +1,7 @@
 # Music-Genre-Webapp
 
+##IMPORTANT - The deployed website is not working because Heroku has stopped giving free Dynos for the API :(
+
 Genre classification, or categorizing music into different categories or genres, is a concept that helps distinguish between the two genres based on the rhythm they compose or maintain.
 
 
